@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_champs2"
+            >
+            <TextView
+                android:id="@+id/nm_terrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terrain   :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/typ_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terrain 1"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/nm_terrain"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/nm_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activity  :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/nm_terrain"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Football"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/nm_activity"
+                android:layout_below="@id/typ_activity"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/dat_reserv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserver le  :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/nm_activity"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/dat_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/03/2023"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/nm_activity"
+                android:layout_toEndOf="@id/dat_reserv"
+
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/dat_heur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:45AM"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/nm_activity"
+                android:layout_toEndOf="@id/dat_res"
+
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/reserv_pour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pour le    :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/dat_reserv"
+
+
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/dat_pour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/03/2023"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/dat_res"
+                android:layout_toEndOf="@id/reserv_pour"
+
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/heur1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00AM"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/dat_heur"
+                android:layout_toEndOf="@id/dat_pour"
+
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/heur2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00AM"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/dat_heur"
+                android:layout_toEndOf="@id/à"
+
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/à"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="à"
+                android:textColor="#F1C07E"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/dat_heur"
+                android:layout_toEndOf="@id/heur1"
+
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/reponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votre demande à été accepter"
+                android:textColor="#5ADA67"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/reserv_pour"
+
+
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

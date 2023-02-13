@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".DocTransport">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="INFORMATION DE TRANSPORT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:textColor="#F1C07E">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+
+        <EditText
+            android:id="@+id/nom_responsable2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="Nom Responsable"
+            android:textColorHint="#7E7C7C"
+            android:paddingLeft="15dp"></EditText>
+
+        <EditText
+            android:id="@+id/nom_association2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/nom_responsable2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="Nom Association"
+            android:paddingLeft="15dp"
+            android:textColorHint="#7E7C7C"></EditText>
+
+        <EditText
+            android:id="@+id/code_identifiant2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/nom_association2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="Code Identifiant"
+            android:textColorHint="#7E7C7C"
+            android:paddingLeft="15dp"></EditText>
+
+        <Spinner
+            android:id="@+id/type_activity2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/code_identifiant2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:paddingLeft="15dp"
+            ></Spinner>
+
+        <EditText
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/type_activity2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="Date D'activitie"
+            android:paddingLeft="15dp"
+            android:textColorHint="#7E7C7C"></EditText>
+
+        <EditText
+            android:id="@+id/hour12"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/date2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="Heur de debut"
+            android:textColorHint="#7E7C7C"
+            android:paddingLeft="15dp"></EditText>
+        <EditText
+            android:id="@+id/hour22"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/hour12"
+            android:layout_below="@id/date2"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="Heur fin"
+            android:textColorHint="#7E7C7C"
+            android:paddingLeft="15dp"></EditText>
+
+        <Button
+            android:id="@+id/reservee2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/hour12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#97F17E"
+            android:text="RESERVER"
+            android:textColor="#248C0E"
+            ></Button>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

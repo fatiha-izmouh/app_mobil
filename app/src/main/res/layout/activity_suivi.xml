@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Suivi">
+
+
+    <TextView
+        android:id="@+id/titre_suivi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="SUIVI DE RESERVATION"
+        android:textColor="#F1C07E"
+        android:textAlignment="center"
+        android:paddingTop="30dp"
+        android:textSize="26sp">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_suivi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:layout_below="@+id/titre_suivi"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+</RelativeLayout>

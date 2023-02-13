@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App_mobile</string>
+
+    <string-array name="cars">
+        <item>20 places</item>
+        <item>14 places</item>
+        <item>6 places</item>
+    </string-array>
+</resources>

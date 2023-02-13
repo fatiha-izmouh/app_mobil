@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Document"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LES INFORMATIONS DE RESERVATION"
+        android:textSize="15sp"
+        android:layout_marginTop="35dp"
+        android:textColor="#F1C07E">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+
+        <EditText
+            android:id="@+id/nom_responsable"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="NOM RESPONSABLE"
+            android:paddingLeft="15dp"></EditText>
+
+        <EditText
+            android:id="@+id/nom_association"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_champs"
+            android:hint="NOM ASSOCIATION"
+            android:paddingLeft="15dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/nom_responsable"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/code_identifiant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/nom_association"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="CODE IDENTIFIANT"
+            android:paddingLeft="15dp"></EditText>
+
+        <EditText
+            android:id="@+id/type_activity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_champs"
+            android:hint="TYPE D'ACTIVITY"
+            android:paddingLeft="15dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/code_identifiant"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_champs"
+            android:hint="DATE D'ACTIVITY"
+            android:paddingLeft="15dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/type_activity"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/hour1"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/date"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="HEUR DEBUT"
+            android:paddingLeft="15dp"></EditText>
+        <EditText
+            android:id="@+id/hour2"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/hour1"
+            android:layout_below="@id/date"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_champs"
+            android:hint="HEUR FIN"
+            android:paddingLeft="15dp"></EditText>
+
+        <Button
+            android:id="@+id/reservee"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/hour1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F1C07E"
+            android:text="RESERVER"
+            ></Button>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
